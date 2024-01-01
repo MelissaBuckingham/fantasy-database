@@ -5,14 +5,18 @@ from taskmanager.models import Category, Task
 
 @app.route("/")
 def home():
-    tasks = list(Task.query.order_by(Task.id).all())
-    return render_template("tasks.html", tasks=tasks)
+    return render_template("home.html")
 
 
 @app.route("/categories")
 def categories():
     categories = list(Category.query.order_by(Category.category_name).all())
     return render_template("categories.html", categories=categories)
+
+@app.route("/tasks")
+def tasks():
+    tasks = list(Task.query.order_by(Task.id).all())
+    return render_template("tasks.html", tasks=tasks)
 
 
 @app.route("/add_category", methods=["GET", "POST"])
@@ -48,10 +52,10 @@ def add_task():
     categories = list(Category.query.order_by(Category.category_name).all())
     if request.method == "POST":
         task = Task(
-            task_name=request.form.get("task_name"),
-            task_description=request.form.get("task_description"),
-            is_urgent=bool(True if request.form.get("is_urgent") else False),
-            due_date=request.form.get("due_date"),
+            city_name=request.form.get("city_name"),
+            city_pop=request.form.get("city_pop"),
+            city_fame=request.form.get("city_fame"),
+            is_cap=bool(True if request.form.get("is_cap") else False),
             category_id=request.form.get("category_id")
         )
         db.session.add(task)
@@ -65,10 +69,10 @@ def edit_task(task_id):
     task = Task.query.get_or_404(task_id)
     categories = list(Category.query.order_by(Category.category_name).all())
     if request.method == "POST":
-        task.task_name = request.form.get("task_name")
-        task.task_description = request.form.get("task_description")
-        task.is_urgent = bool(True if request.form.get("is_urgent") else False)
-        task.due_date = request.form.get("due_date")
+        task.city_name = request.form.get("city_name")
+        task.city_pop = request.form.get("city_pop")
+        task.city_fame = request.form.get("city_fame")
+        task.is_cap = bool(True if request.form.get("is_cap") else False)
         task.category_id = request.form.get("category_id")
         db.session.commit()
     return render_template("edit_task.html", task=task, categories=categories)
