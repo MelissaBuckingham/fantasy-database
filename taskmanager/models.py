@@ -13,7 +13,7 @@ class Category(db.Model):
 
 
 class Task(db.Model):
-    # schema for the Task model
+    # schema for the City Task model
     id = db.Column(db.Integer, primary_key=True)
     city_name = db.Column(db.String(50), unique=True, nullable=False)
     city_pop = db.Column(db.Text, nullable=False)

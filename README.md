@@ -36,12 +36,9 @@ I have checked that all links are working correctly and there are no issues.
 
 JS Lint
 
-Below is the result on JS Lint when I enter the Code from form.js:
+Below is the result on JS Lint when I enter the JS Code:
 ![Screenshots of the JS Lint test of form.js](images/formJsLint.png "JS Lint - form.js")
 
-And below is the result when I entered the code from quiz.js:
-![Screenshots of the JS Lint test of quiz.js](images/quizJsLint.png "JS Lint - quiz.js")
-3 Warnings were given, I spent some good time on stack overflow to see if other people had the same problem, and it seems like its a common occurrence and most people are saying it´s best just to ignore it, and seeing that it is a reqisite of p2.2 that i should have a loop, and also the wording saying there should be no "major" warnings I thought I could ignore it and put it down as a minor warning for the purpose of this excercise.
 
 I have used a mixture of manual testing and automated testing in the creation of this database, the automated testing makes sure that it is in line with accepted standards, and the manual testing makes sure that it is comfortable for the user to use and has the correct level of interactivity.
 
