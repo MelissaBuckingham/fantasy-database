@@ -14,6 +14,8 @@ I created a number of HTML files in order that the finished project will be very
 
 The database allows for the creation, reading, updating and deletion of fantasy realms and cities. the cities are grouped according to their respective fantasy realms.
 
+The data schema is arranged in such a way so that a user can add a fantasy realm, but also they can add a city that can be placed within a realm in order to keep the data tidy and searchable.
+
 WireFrame
 
 ![Screenshots of the Wireframe](images/wireFrame.png "WireFrame")
@@ -55,6 +57,8 @@ No issues found at all.
 My site was deployed on Heroku at https://fantasy-database-93b7701d6f44.herokuapp.com/
 
 Help received from ElephantSQL.
+
+Debug set to False for deployment.
 
 
 ## Credits
