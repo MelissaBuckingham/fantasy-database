@@ -30,6 +30,7 @@ I Manually tested the Fantasy Database every step of the way, using the web prev
 
 I had a problem early on where I couldn't get PostgreSQL to work on Gitpod, I searched for a long time to find otu an answer to my problem, eventually I laded on Gitpod's own page where they showed me how to write the .gitpod.yml file which downloaded and installed PostgreSQL on the IDE.
 
+I have checked that all links are working correctly and there are no issues.
 
 JS Lint
 
@@ -40,20 +41,23 @@ And below is the result when I entered the code from quiz.js:
 ![Screenshots of the JS Lint test of quiz.js](images/quizJsLint.png "JS Lint - quiz.js")
 3 Warnings were given, I spent some good time on stack overflow to see if other people had the same problem, and it seems like its a common occurrence and most people are saying it´s best just to ignore it, and seeing that it is a reqisite of p2.2 that i should have a loop, and also the wording saying there should be no "major" warnings I thought I could ignore it and put it down as a minor warning for the purpose of this excercise.
 
-I have used a mixture of manual testing and automated testing in the creation of this website, the automated testing makes sure that it is in line with accepted standards, and the manual testing makes sure that it is comfortable for the user to use and has the correct level of interactivity.
+I have used a mixture of manual testing and automated testing in the creation of this database, the automated testing makes sure that it is in line with accepted standards, and the manual testing makes sure that it is comfortable for the user to use and has the correct level of interactivity.
 
 W3 Validator
-![Screenshots of the W3 test of HTML](images/W3ValidatorHTML.png "W3 Validation HTML")
-I had a few trailing slashes which had no function but they are removed now.
+![Screenshots of the W3 test of HTML](images/W3HtmlValidation.jpg "W3 Validation HTML")
+No issues found at all.
 
 Jigsaw CSS Validation
-![Screenshots of the Jigsaw test of CSS](images/jigsaw.png "Jigsaw Validation CSS")
+![Screenshots of the Jigsaw test of CSS](images/jigsawValidation.jpg "Jigsaw Validation CSS")
 No issues found at all.
 
 ## Deployment
 My site was deployed on Heroku at https://fantasy-database-93b7701d6f44.herokuapp.com/
 
+Help received from ElephantSQL.
+
 
 ## Credits
-I used the Love Running project for inspiration including for the hero image inclusion and the responsiveness on smaler screened devices.
-I drew inspiration from geeksforgeeks.org and sitepoint.com, for the quiz section of the website. 
+I used the Task Manager project for inspiration.
+
+I gained a lot of help from MarketSplash.com.
