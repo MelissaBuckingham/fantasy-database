@@ -1,39 +1,59 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Fantasy Travel Database
+## Description
+The purpose of this database is to provide information about the fantastic worlds, realms, and cities in other paradigms.
+- I wanted to create this database which combines two of my passions: Travel and Fantasy.
+- I built this database in order to showcase what I have learned so far through my level 5 diploma in Coding using python, PostgreSQL, and Flask.
+- Troughout this project so far I have grown in confidence and feel like I can easily build a database from scratch, and also make it interactive for the user, something  I previously did not feel capable to do.
+- From studying the course material and other resources on the web, I have learned lots of different ways to get the ideas from my head to the code of my database. It's been a thrilling ride!
+ 
+## UX design
 
-Welcome,
+I wanted to make the user experience as easy to use but at the same time making the database unique and interesting to use. 
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+I created a number of HTML files in order that the finished project will be very interactive and fun to use.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+The database allows for the creation, reading, updating and deletion of fantasy realms and cities. the cities are grouped according to their respective fantasy realms.
 
-## Codeanywhere Reminders
+WireFrame
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+![Screenshots of the Wireframe](images/wireFrame.png "WireFrame")
 
-`python3 -m http.server`
+On the About page - and Tours page - there is a form which the user can fill in and once they press Submit there is a Javascript function which validates whether the details have been entered correctly, if so a success message is posted on a popup as seen below.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+![Screenshots of the Submitted PopUp](images/popup.png "Submitted PopUp")
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Bugs and Testing
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+I Manually tested the Fantasy Database every step of the way, using the web preview function on Gitpod. I also tested it once it was deployed on Heroku to check that it was still funtioning as I had initially expected it to.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+I had a problem early on where I couldn't get PostgreSQL to work on Gitpod, I searched for a long time to find otu an answer to my problem, eventually I laded on Gitpod's own page where they showed me how to write the .gitpod.yml file which downloaded and installed PostgreSQL on the IDE.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+JS Lint
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Below is the result on JS Lint when I enter the Code from form.js:
+![Screenshots of the JS Lint test of form.js](images/formJsLint.png "JS Lint - form.js")
 
----
+And below is the result when I entered the code from quiz.js:
+![Screenshots of the JS Lint test of quiz.js](images/quizJsLint.png "JS Lint - quiz.js")
+3 Warnings were given, I spent some good time on stack overflow to see if other people had the same problem, and it seems like its a common occurrence and most people are saying it´s best just to ignore it, and seeing that it is a reqisite of p2.2 that i should have a loop, and also the wording saying there should be no "major" warnings I thought I could ignore it and put it down as a minor warning for the purpose of this excercise.
 
-Happy coding!
+I have used a mixture of manual testing and automated testing in the creation of this website, the automated testing makes sure that it is in line with accepted standards, and the manual testing makes sure that it is comfortable for the user to use and has the correct level of interactivity.
+
+W3 Validator
+![Screenshots of the W3 test of HTML](images/W3ValidatorHTML.png "W3 Validation HTML")
+I had a few trailing slashes which had no function but they are removed now.
+
+Jigsaw CSS Validation
+![Screenshots of the Jigsaw test of CSS](images/jigsaw.png "Jigsaw Validation CSS")
+No issues found at all.
+
+## Deployment
+My site was deployed on Heroku at https://fantasy-database-93b7701d6f44.herokuapp.com/
+
+
+## Credits
+I used the Love Running project for inspiration including for the hero image inclusion and the responsiveness on smaler screened devices.
+I drew inspiration from geeksforgeeks.org and sitepoint.com, for the quiz section of the website. 
