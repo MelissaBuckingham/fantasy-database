@@ -18,11 +18,8 @@ The data schema is arranged in such a way so that a user can add a fantasy realm
 
 WireFrame
 
-![Screenshots of the Wireframe](images/wireFrame.png "WireFrame")
+![Screenshots of the Wireframe](images/Wireframe.png "Wireframe")
 
-On the About page - and Tours page - there is a form which the user can fill in and once they press Submit there is a Javascript function which validates whether the details have been entered correctly, if so a success message is posted on a popup as seen below.
-
-![Screenshots of the Submitted PopUp](images/popup.png "Submitted PopUp")
 
 
 
@@ -37,7 +34,7 @@ I have checked that all links are working correctly and there are no issues.
 JS Lint
 
 Below is the result on JS Lint when I enter the JS Code:
-![Screenshots of the JS Lint test of form.js](images/formJsLint.png "JS Lint - form.js")
+![Screenshots of the JS Lint test of site JavaScript](images/JsLint.jpg "JS Lint")
 
 
 I have used a mixture of manual testing and automated testing in the creation of this database, the automated testing makes sure that it is in line with accepted standards, and the manual testing makes sure that it is comfortable for the user to use and has the correct level of interactivity.
